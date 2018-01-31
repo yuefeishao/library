@@ -80,8 +80,7 @@ public class ChildViewPager extends ViewPager {
         public void onSingleTouch();
     }
 
-    public void setOnSingleTouchListener(
-            OnSingleTouchListener onSingleTouchListener) {
+    public void setOnSingleTouchListener(OnSingleTouchListener onSingleTouchListener) {
         this.onSingleTouchListener = onSingleTouchListener;
     }
 

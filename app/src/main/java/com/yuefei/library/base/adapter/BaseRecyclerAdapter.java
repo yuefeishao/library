@@ -1,4 +1,4 @@
-package com.yuefei.library.adapter.base;
+package com.yuefei.library.base.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *   适配器的基类
+ *
  * Created by shao on 15/5/11.
  */
 public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

@@ -1,0 +1,18 @@
+library 说明：
+
+
+网络框架：
+
+图片加载框架：
+
+本地数据库：GreenDao
+
+基类适配器：BaseRecyclerAdapter,BaseWrapAdapter;
+
+工具类：util包
+
+自定义View：widget包
+
+
+小功能：
+

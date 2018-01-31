@@ -1,4 +1,4 @@
-package com.yuefei.library.adapter.base;
+package com.yuefei.library.base.adapter;
 
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.GridLayoutManager.SpanSizeLookup;
@@ -10,6 +10,10 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+/***
+ *   添加头部View与底部View包裹适配器基类
+ *
+ * */
 @SuppressWarnings("rawtypes")
 public class BaseWrapAdapter<T extends RecyclerView.Adapter> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
