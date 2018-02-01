@@ -1,7 +1,7 @@
 library 说明：
 
 
-网络框架：
+网络框架：Fresco,ImageLoader,Glide
 
 图片加载框架：
 
@@ -15,4 +15,21 @@ library 说明：
 
 
 小功能：
+
+   常用的开发库：
+
+    1、FlycoTabLayout    （TabLayout +viewPager）
+
+    2、android-Ultra-Pull-To-Refresh  （下拉刷新，上拉加载）
+
+    3、FlowLayout           (实现流式布局)
+
+    4、Zxing                  二维码
+
+    5、ijkplayer             （播放器）
+
+
+
+
+TV 开发：
 
