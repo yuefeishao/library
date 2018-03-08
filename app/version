@@ -1,9 +1,9 @@
 library 说明：
 
 
-网络框架：Fresco,ImageLoader,Glide
+网络框架：Oktttp,Retrofit
 
-图片加载框架：
+图片加载框架：Fresco,ImageLoader,Glide,PhotoView
 
 本地数据库：GreenDao
 
@@ -14,13 +14,13 @@ library 说明：
 自定义View：widget包
 
 
-小功能：
+------------------------------------------------------------------------
 
    常用的开发库：
 
     1、FlycoTabLayout    （TabLayout +viewPager）
 
-    2、android-Ultra-Pull-To-Refresh  （下拉刷新，上拉加载）
+    2、android-Ultra-Pull-To-Refresh   （下拉刷新，上拉加载）
 
     3、FlowLayout           (实现流式布局)
 
@@ -28,8 +28,18 @@ library 说明：
 
     5、ijkplayer             （播放器）
 
+    6、eventBus               (事件分发)
 
-
+    7.JiaoZiVideoPlayer（节操播放器）        短视频   https://github.com/lipangit/JiaoZiVideoPlayer
 
 TV 开发：
 
+小功能：
+
+   1.短视频（ListView）
+   2.视频点播
+   3.分享登录（ShareSDK）
+   4.直播（七牛推流与拉流）
+   5.视频缓存（数据库GreenDao与断点续传）
+   6.聊天（融云SDK，环信SDK）
+   7.极光推送（）
