@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 26
@@ -29,7 +30,12 @@ repositories {
     }
 
 }
+greendao {
+    schemaVersion 5
+    daoPackage 'com.yuefei.library.db'
+    targetGenDir 'src/main/java'
 
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -41,4 +47,6 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'in.srain.cube:ptr-load-more:1.0.6'
     testCompile 'junit:junit:4.12'
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
 }

@@ -26,13 +26,16 @@ library 说明：
 
     4、Zxing                  二维码
 
-    5、ijkplayer             （播放器）
+    5、ijkplayer             （播放器）  https://github.com/jjdxmashl/jjdxm_ijkplayer
 
     6、eventBus               (事件分发)
 
     7.JiaoZiVideoPlayer（节操播放器）        短视频   https://github.com/lipangit/JiaoZiVideoPlayer
 
+    8.直播间礼物动画                   https://github.com/yyued/SVGAPlayer-Android
+
 TV 开发：
+    1.开发框架          https://github.com/FrozenFreeFall/Android-tv-widget
 
 小功能：
 
@@ -43,3 +46,8 @@ TV 开发：
    5.视频缓存（数据库GreenDao与断点续传）
    6.聊天（融云SDK，环信SDK）
    7.极光推送（）
+
+ 开发中解决的问题：
+
+ 6.0系统： 1.动态权限的申请
+ 7.0系统： 1.文件存储   FileProvider
