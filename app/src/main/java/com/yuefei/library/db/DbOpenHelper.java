@@ -27,17 +27,6 @@ public class DbOpenHelper extends DaoMaster.OpenHelper {
 
         // 数据库升级更新处理
 
-//        if(oldVersion==2||oldVersion==3){
-//            String UPDATE_TABLE_NAME="VIDEO_BEAN";
-//            String UPDATE_TABLE_FILED="VIDEO_ID";
-//            DaoMaster.createAllTables(db,true);
-//            db.execSQL( "ALTER TABLE " +UPDATE_TABLE_NAME+" ADD "+UPDATE_TABLE_FILED+ " TEXT ");
-//        }else if(oldVersion==1){
-//            dropAllTables(db, true);
-//            onCreate(db);
-//        } else if (oldVersion == 4) {
-//            DaoMaster.createAllTables(db, true);
-//        }
 
     }
 }

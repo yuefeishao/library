@@ -51,3 +51,53 @@ TV 开发：
 
  6.0系统： 1.动态权限的申请
  7.0系统： 1.文件存储   FileProvider
+
+
+ OOM注意事项：
+ 1.适当调整图像大小。
+ 2.采用合适的缓存策略。
+ 3.采用低内存占用量的编码方式，比如Bitmap.Config.ARGB_4444比Bitmap.Config.ARGB_8888更省内存。
+ 4.及时回收Bitmap。
+ 5.不要在循环中创建过多的本地变量。
+ 6.自定义对内存分配大小。
+ 7.特殊情况可在mainfests的Application中增加 android:largeHeap="true"属性，比如临时创建多个小图片(地图marker)
+
+ ANR:
+ 1.复杂的视图树
+ 2.频繁的requestlayout()
+ 3.UI线程被阻塞
+
+ Java内存管理机制:内存抖动
+   1. 尽量避免在循环体内创建对象，应该把对象创建移到循环体外。
+   2. 注意自定义View的onDraw()方法会被频繁调用，所以在这里面不应该频繁的创建对象。
+   3. 当需要大量使用Bitmap的时候，试着把它们缓存在数组中实现复用。
+   4.对于能够复用的对象，同理可以使用对象池将它们缓存起来。
+
+
+
+ 字符串操作：StringBuilder
+
+ 弹窗的异常：（https://www.jianshu.com/p/f97fa0fa17b6?open_source=weibo_search）
+ 1.activity ：生命周期引起的问题
+ 2.service/appcation :没有设置window type为TYPE_SYSTEM_ALERT
+ 3.6.0的系统上, (非定制 rom 行为)若没有给予悬浮窗权限, 会弹出该问题, 可以通过Settings.canDrawOverlays来判断是否有该权限.
+ 4.android6.0的系统Dialog弹窗需要用户手动授权
+
+ 集合同步修改异常：ConcurrentModificationException
+ 具体方法：多线程访问时要增加同步锁，或者建议使用线程安全的集合：
+ 1. 使用ConcurrentHashMap替换HashMap，CopyOnWriteArrayList替换ArrayList；
+ 2. 或者使用使用Vector替换ArrayList，Vector是线程安全的。Vector的缺点：大量数据操作时，由于线程安全，性能比ArrayList低.
+
+ 内存泄漏：LeakCanary
+ 代码检测：FindBugs  lint
+
+ 干货地址：https://www.jianshu.com/p/dad51f6c9c4d?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+
+ 自定view：
+ RoundCornerTextView ：轻松实现圆角、文字描边、状态指示等效果
+
+
+ 直播：金山云
+
+
+
