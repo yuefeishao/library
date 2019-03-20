@@ -100,7 +100,19 @@ TV 开发：
  https://github.com/wl9739/BlurredView
 
 
+ 动态模糊：https://github.com/wl9739/BlurredView
  直播：金山云
+
+ 高仿小功能：
+ https://blog.csdn.net/u013651026/article/details/81232653
+ // 性能优化
+ https://blog.csdn.net/u013651026/article/details/88370325
+ // 高仿抖音
+https://github.com/DingMouRen/LayoutManagerGroup
+// 方维的源码
+https://github.com/kingdzdz
+// 简历的模板
+https://github.com/Trinea/trinea-download/tree/master/resume
 
  项目：
  方糖娱乐： 是一款集社交，点播，直播，电商，动态圈子为一体的app，百万注册用户。
@@ -125,7 +137,5 @@ TV 开发：
           2.负责Android网络架构设计（Retrofit+okhttp）
           3.基于Android-tv-widget框架，代码功能实现，焦点控制
           4.版本迭代 
-
-
 
 
